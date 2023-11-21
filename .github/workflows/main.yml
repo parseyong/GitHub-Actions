@@ -21,7 +21,11 @@ jobs:
       - name: Setup MariaDB
         uses: getong/mariadb-action@v1.1
         with:
+          host port: 5322
+          container port: 3306
           character set server: 'utf8'
+          mariadb version: '10.5'
+          mysql root password: ${{ secrets.ROOT_PASSWORD }}
           mysql database: 'todolisttest'
           mysql user: 'seyong'
           mysql password: 'test1234'
