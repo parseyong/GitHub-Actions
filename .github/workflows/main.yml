@@ -21,7 +21,7 @@ jobs:
       - name: Setup MariaDB
         uses: getong/mariadb-action@v1.1
         with:
-          host port: 5322
+          host port: 5155
           container port: 3306
           character set server: 'utf8'
           mariadb version: '10.5'
