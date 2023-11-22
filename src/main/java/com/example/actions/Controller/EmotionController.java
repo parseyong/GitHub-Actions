@@ -26,7 +26,7 @@ public class EmotionController {
     }
 
     @PostMapping("/emotions/{toDoId}")
-    @ApiOperation(value = "이모션 추가")
+    @ApiOperation(value = "이모션  추가")
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Emotion 추가성공"),
             @ApiResponse(code = 400, message = "잘못된 요청입니다.")})
