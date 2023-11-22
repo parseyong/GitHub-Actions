@@ -18,17 +18,6 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: Setup MariaDB
-        uses: getong/mariadb-action@v1.1
-        with:
-          host port: 5155
-          container port: 3306
-          character set server: 'utf8'
-          mariadb version: '10.5.21'
-          mysql database: 'todolisttest'
-          mysql user: 'seyong'
-          mysql password: 'test1234'
-
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
 
