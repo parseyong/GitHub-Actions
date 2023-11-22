@@ -1,13 +1,13 @@
-package com.example.todolist.Service;
+package com.example.actions.Service;
 
-import com.example.todolist.DTO.User.AddUserReqDTO;
-import com.example.todolist.DTO.User.ChangeUserReqDTO;
-import com.example.todolist.DTO.User.DeleteUserReqDTO;
-import com.example.todolist.DTO.User.ReadUserResDTO;
-import com.example.todolist.Exception.CommondException;
-import com.example.todolist.Exception.ExceptionCode;
-import com.example.todolist.Repository.UserRepository;
-import com.example.todolist.domain.User;
+import com.example.actions.DTO.User.AddUserReqDTO;
+import com.example.actions.DTO.User.ChangeUserReqDTO;
+import com.example.actions.DTO.User.DeleteUserReqDTO;
+import com.example.actions.DTO.User.ReadUserResDTO;
+import com.example.actions.Exception.CommondException;
+import com.example.actions.Exception.ExceptionCode;
+import com.example.actions.Repository.UserRepository;
+import com.example.actions.domain.User;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

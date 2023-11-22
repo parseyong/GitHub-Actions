@@ -1,15 +1,16 @@
-package com.example.todolist.Service;
+package com.example.actions.Service;
 
-import com.example.todolist.DTO.ToDo.AddToDoReqDTO;
-import com.example.todolist.DTO.ToDo.ReadToDoPreviewResDTO;
-import com.example.todolist.DTO.ToDo.ReadToDoResDTO;
-import com.example.todolist.DTO.ToDo.UpdateToDoReqDTO;
-import com.example.todolist.Exception.CommondException;
-import com.example.todolist.Exception.ExceptionCode;
-import com.example.todolist.Repository.ToDoRepository;
-import com.example.todolist.Repository.UserRepository;
-import com.example.todolist.domain.ToDo;
-import com.example.todolist.domain.User;
+
+import com.example.actions.DTO.ToDo.AddToDoReqDTO;
+import com.example.actions.DTO.ToDo.ReadToDoPreviewResDTO;
+import com.example.actions.DTO.ToDo.ReadToDoResDTO;
+import com.example.actions.DTO.ToDo.UpdateToDoReqDTO;
+import com.example.actions.Exception.CommondException;
+import com.example.actions.Exception.ExceptionCode;
+import com.example.actions.Repository.ToDoRepository;
+import com.example.actions.Repository.UserRepository;
+import com.example.actions.domain.ToDo;
+import com.example.actions.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -59,7 +60,7 @@ public class ToDoService {
     }
 
     @Transactional(readOnly = true)
-    public ReadToDoResDTO readToDo(Long toDoId,Long userId){  // 단일 ToDo조회 로직
+    public ReadToDoResDTO readToDo(Long toDoId, Long userId){  // 단일 ToDo조회 로직
 
         ToDo toDo = toDoRepository.findById(toDoId)
                 .orElseThrow(() -> new CommondException(ExceptionCode.TODO_NOTFOUND));

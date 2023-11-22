@@ -1,8 +1,8 @@
-package com.example.todolist.Repository;
+package com.example.actions.Repository;
 
-import com.example.todolist.domain.Emotion;
-import com.example.todolist.domain.ToDo;
-import com.example.todolist.domain.User;
+import com.example.actions.domain.Emotion;
+import com.example.actions.domain.ToDo;
+import com.example.actions.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

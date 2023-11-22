@@ -1,6 +1,6 @@
-package com.example.todolist.DTO.User;
+package com.example.actions.DTO.User;
 
-import com.example.todolist.domain.User;
+import com.example.actions.domain.User;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

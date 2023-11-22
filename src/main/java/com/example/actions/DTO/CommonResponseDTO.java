@@ -1,4 +1,4 @@
-package com.example.todolist.DTO;
+package com.example.actions.DTO;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

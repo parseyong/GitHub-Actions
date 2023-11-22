@@ -1,4 +1,4 @@
-package com.example.todolist.domain;
+package com.example.actions.domain;
 
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -35,7 +35,7 @@ public class Emotion {
     private ToDo toDo;
 
     @Builder
-    public Emotion(User user,ToDo toDo,EmotionStatus emotionStatus){
+    public Emotion(User user, ToDo toDo, EmotionStatus emotionStatus){
         this.user=user;
         this.toDo=toDo;
         this.emotionStatus=emotionStatus;

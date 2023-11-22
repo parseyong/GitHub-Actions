@@ -1,4 +1,4 @@
-package com.example.todolist.DTO.Reply;
+package com.example.actions.DTO.Reply;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;

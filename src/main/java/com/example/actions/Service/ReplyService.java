@@ -1,16 +1,16 @@
-package com.example.todolist.Service;
+package com.example.actions.Service;
 
-import com.example.todolist.DTO.Reply.AddReplyReqDTO;
-import com.example.todolist.DTO.Reply.ChangeReplyReqDTO;
-import com.example.todolist.DTO.Reply.ReadReplyResDTO;
-import com.example.todolist.Exception.CommondException;
-import com.example.todolist.Exception.ExceptionCode;
-import com.example.todolist.Repository.ReplyRepository;
-import com.example.todolist.Repository.ToDoRepository;
-import com.example.todolist.Repository.UserRepository;
-import com.example.todolist.domain.Reply;
-import com.example.todolist.domain.ToDo;
-import com.example.todolist.domain.User;
+import com.example.actions.DTO.Reply.AddReplyReqDTO;
+import com.example.actions.DTO.Reply.ChangeReplyReqDTO;
+import com.example.actions.DTO.Reply.ReadReplyResDTO;
+import com.example.actions.Exception.CommondException;
+import com.example.actions.Exception.ExceptionCode;
+import com.example.actions.Repository.ReplyRepository;
+import com.example.actions.Repository.ToDoRepository;
+import com.example.actions.Repository.UserRepository;
+import com.example.actions.domain.Reply;
+import com.example.actions.domain.ToDo;
+import com.example.actions.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,7 +40,7 @@ public class ReplyService {
 
         replyRepository.save(AddReplyReqDTO.toEntity(addReplyReqDTO,user,toDo));
     }
-    public List<ReadReplyResDTO> readReply(Long userId,List<Reply> replyList){
+    public List<ReadReplyResDTO> readReply(Long userId, List<Reply> replyList){
 
         List<ReadReplyResDTO> readReplyResDTOList =
                 replyList.stream().map(e -> ReadReplyResDTO.toDto(e,isMyReply(userId,e))).collect(Collectors.toList());

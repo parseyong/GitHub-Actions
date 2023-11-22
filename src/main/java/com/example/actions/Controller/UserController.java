@@ -1,11 +1,11 @@
-package com.example.todolist.Controller;
+package com.example.actions.Controller;
 
-import com.example.todolist.DTO.CommonResponseDTO;
-import com.example.todolist.DTO.User.AddUserReqDTO;
-import com.example.todolist.DTO.User.ChangeUserReqDTO;
-import com.example.todolist.DTO.User.DeleteUserReqDTO;
-import com.example.todolist.DTO.User.ReadUserResDTO;
-import com.example.todolist.Service.UserService;
+import com.example.actions.DTO.CommonResponseDTO;
+import com.example.actions.DTO.User.AddUserReqDTO;
+import com.example.actions.DTO.User.ChangeUserReqDTO;
+import com.example.actions.DTO.User.DeleteUserReqDTO;
+import com.example.actions.DTO.User.ReadUserResDTO;
+import com.example.actions.Service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

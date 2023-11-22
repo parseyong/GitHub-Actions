@@ -1,4 +1,4 @@
-package com.example.todolist.domain;
+package com.example.actions.domain;
 
 public enum EmotionStatus {
     Like,

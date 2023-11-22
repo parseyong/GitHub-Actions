@@ -1,6 +1,6 @@
-package com.example.todolist.DTO.ToDo;
+package com.example.actions.DTO.ToDo;
 
-import com.example.todolist.domain.ToDo;
+import com.example.actions.domain.ToDo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModelProperty;

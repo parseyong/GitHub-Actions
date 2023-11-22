@@ -1,9 +1,9 @@
-package com.example.todolist.Controller;
+package com.example.actions.Controller;
 
-import com.example.todolist.DTO.CommonResponseDTO;
-import com.example.todolist.DTO.Reply.AddReplyReqDTO;
-import com.example.todolist.DTO.Reply.ChangeReplyReqDTO;
-import com.example.todolist.Service.ReplyService;
+import com.example.actions.DTO.CommonResponseDTO;
+import com.example.actions.DTO.Reply.AddReplyReqDTO;
+import com.example.actions.DTO.Reply.ChangeReplyReqDTO;
+import com.example.actions.Service.ReplyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

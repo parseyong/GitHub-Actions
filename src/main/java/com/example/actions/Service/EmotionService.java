@@ -1,14 +1,15 @@
-package com.example.todolist.Service;
+package com.example.actions.Service;
 
-import com.example.todolist.Exception.CommondException;
-import com.example.todolist.Exception.ExceptionCode;
-import com.example.todolist.Repository.EmotionRepository;
-import com.example.todolist.Repository.ToDoRepository;
-import com.example.todolist.Repository.UserRepository;
-import com.example.todolist.domain.Emotion;
-import com.example.todolist.domain.EmotionStatus;
-import com.example.todolist.domain.ToDo;
-import com.example.todolist.domain.User;
+
+import com.example.actions.Exception.CommondException;
+import com.example.actions.Exception.ExceptionCode;
+import com.example.actions.Repository.EmotionRepository;
+import com.example.actions.Repository.ToDoRepository;
+import com.example.actions.Repository.UserRepository;
+import com.example.actions.domain.Emotion;
+import com.example.actions.domain.EmotionStatus;
+import com.example.actions.domain.ToDo;
+import com.example.actions.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

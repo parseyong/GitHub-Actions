@@ -1,8 +1,8 @@
-package com.example.todolist.DTO.Reply;
+package com.example.actions.DTO.Reply;
 
-import com.example.todolist.domain.Reply;
-import com.example.todolist.domain.ToDo;
-import com.example.todolist.domain.User;
+import com.example.actions.domain.Reply;
+import com.example.actions.domain.ToDo;
+import com.example.actions.domain.User;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 

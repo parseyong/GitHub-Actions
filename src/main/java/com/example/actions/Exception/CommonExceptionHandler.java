@@ -1,6 +1,6 @@
-package com.example.todolist.Exception;
+package com.example.actions.Exception;
 
-import com.example.todolist.DTO.CommonResponseDTO;
+import com.example.actions.DTO.CommonResponseDTO;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

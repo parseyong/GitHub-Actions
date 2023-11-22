@@ -1,6 +1,6 @@
-package com.example.todolist.Repository;
+package com.example.actions.Repository;
 
-import com.example.todolist.domain.ToDo;
+import com.example.actions.domain.ToDo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface  ToDoRepository extends JpaRepository<ToDo,Long> {

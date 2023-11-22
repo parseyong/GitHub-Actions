@@ -1,4 +1,4 @@
-package com.example.todolist.DTO.User;
+package com.example.actions.DTO.User;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;

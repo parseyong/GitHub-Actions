@@ -1,4 +1,4 @@
-package com.example.todolist.domain;
+package com.example.actions.domain;
 
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -32,7 +32,7 @@ public class Reply extends  BaseEntity{
     private User user;
 
     @Builder
-    public Reply(String content,ToDo toDo,User user){
+    public Reply(String content, ToDo toDo, User user){
         this.content=content;
         this.toDo=toDo;
         this.user=user;
