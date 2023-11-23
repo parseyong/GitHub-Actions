@@ -30,7 +30,7 @@ public class SwaggerConfig {
                 .useDefaultResponseMessages(false)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.todolist.Controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.actions.Controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
