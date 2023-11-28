@@ -39,7 +39,7 @@ public class UserRepositoryTest {
         User user = userRepository.save(this.user);
 
         //then
-        assertThat(user.getEmail()).isEqualTo("test@naver.com");
+        assertThat(user.getEmail()).isEqualTo("test1@naver.com");
         assertThat(user.getName()).isEqualTo("testName");
         assertThat(user.getPassword()).isEqualTo("1234");
 
