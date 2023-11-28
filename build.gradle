@@ -38,6 +38,7 @@ dependencies {
     //마리아 db
     implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.11'
     runtimeOnly 'com.mysql:mysql-connector-j'
+    implementation 'com.h2database:h2'
     // test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     // swagger

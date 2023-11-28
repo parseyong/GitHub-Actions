@@ -7,7 +7,6 @@ import com.example.actions.DTO.User.DeleteUserReqDTO;
 import com.example.actions.DTO.User.ReadUserResDTO;
 import com.example.actions.Service.UserService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import io.swagger.v3.oas.annotations.Operation;

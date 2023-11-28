@@ -7,7 +7,6 @@ import com.example.actions.DTO.ToDo.ReadToDoResDTO;
 import com.example.actions.DTO.ToDo.UpdateToDoReqDTO;
 import com.example.actions.Service.ToDoService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import io.swagger.v3.oas.annotations.Operation;

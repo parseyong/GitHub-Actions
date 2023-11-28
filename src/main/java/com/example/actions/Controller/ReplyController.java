@@ -5,7 +5,6 @@ import com.example.actions.DTO.Reply.AddReplyReqDTO;
 import com.example.actions.DTO.Reply.ChangeReplyReqDTO;
 import com.example.actions.Service.ReplyService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import io.swagger.v3.oas.annotations.Operation;

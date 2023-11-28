@@ -3,7 +3,6 @@ package com.example.actions.Controller;
 import com.example.actions.DTO.CommonResponseDTO;
 import com.example.actions.Service.EmotionService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import io.swagger.v3.oas.annotations.Operation;
