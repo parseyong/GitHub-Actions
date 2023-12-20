@@ -11,6 +11,7 @@ import javax.persistence.*;
 
 @Entity
 @Getter
+@Table(name = "emotions")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Emotion {
 
