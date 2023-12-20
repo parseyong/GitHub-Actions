@@ -17,7 +17,7 @@ public class Emotion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "emotion_id")
-    private Long EmotionId;
+    private Long emotionId;
 
     @Column(nullable = false, name = "emotion_status")
     @Enumerated(EnumType.STRING)
