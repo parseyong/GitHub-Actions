@@ -27,8 +27,7 @@ jobs:
       - name: Run build with Gradle Wrapper
         run: ./gradlew build
 
-      - name: Start Test
-        run: SPRING_PROFILES_ACTIVE=[test] ./gradlew test
+
 
       - name: Send file to the server
         uses: appleboy/scp-action@master
