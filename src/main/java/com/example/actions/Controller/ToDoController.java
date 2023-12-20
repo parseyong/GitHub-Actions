@@ -23,14 +23,14 @@ import java.util.List;
 public class ToDoController {
 
     private final ToDoService toDoService;
-    private final Long userId = 4l;
+    private final Long userId = 1l;
     @Autowired
     public ToDoController(ToDoService toDoService){
         this.toDoService=toDoService;
     }
 
     @GetMapping("/to-dos")
-    @Operation(summary = "모든 Todo의 Preview를 조회합니다.", description = "1. userId값은 jwt토큰에서 추출합니다. 아직 구현이 되지 않아 임의의 값(4)으로 처리중이며 userId값은 입력하지 않아도 됩니다.<br>2.헤더에 인증토큰을 보내야 하며 로그인 성공 시 발급됩니다.")
+    @Operation(summary = "모든 Todo의 Preview를 조회합니다.", description = "1. userId값은 jwt토큰에서 추출합니다. 아직 구현이 되지 않아 임의의 값(1)으로 처리중이며 userId값은 입력하지 않아도 됩니다.<br>2.헤더에 인증토큰을 보내야 하며 로그인 성공 시 발급됩니다.")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "전체ToDo 조회성공",response = ReadToDoPreviewResDTO.class),
             @ApiResponse(code = 400, message = "잘못된 요청입니다.")})
@@ -53,7 +53,7 @@ public class ToDoController {
     }
 
     @PostMapping("/to-dos")
-    @Operation(summary = "Todo 추가", description = "1. userId값은 jwt토큰에서 추출합니다. 아직 구현이 되지 않아 임의의 값(4)으로 처리중이며 userId값은 입력하지 않아도 됩니다.<br>2.헤더에 인증토큰을 보내야 하며 로그인 성공 시 발급됩니다.<br>3.dueDate값은 yyyy-MM-dd-HH형식으로 입력해야 합니다.")
+    @Operation(summary = "Todo 추가", description = "1. userId값은 jwt토큰에서 추출합니다. 아직 구현이 되지 않아 임의의 값(1)으로 처리중이며 userId값은 입력하지 않아도 됩니다.<br>2.헤더에 인증토큰을 보내야 하며 로그인 성공 시 발급됩니다.<br>3.dueDate값은 yyyy-MM-dd-HH형식으로 입력해야 합니다.")
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "ToDo 추가성공"),
             @ApiResponse(code = 400, message = "잘못된 요청입니다.")})
@@ -67,7 +67,7 @@ public class ToDoController {
     }
 
     @PatchMapping("/to-dos/{toDoId}")
-    @Operation(summary = "Todo 수정", description = "1. userId값은 jwt토큰에서 추출합니다. 아직 구현이 되지 않아 임의의 값(4)으로 처리중이며 userId값은 입력하지 않아도 됩니다.<br>2.헤더에 인증토큰을 보내야 하며 로그인 성공 시 발급됩니다.<br>3.dueDate값은 yyyy-MM-dd-HH형식으로 입력해야 합니다.<br>4. 3. todoId값은 정수값이여야 하며 uri에서 값을 추출합니다. 요청바디에는 해당 값을 보내지 않아도 됩니다.")
+    @Operation(summary = "Todo 수정", description = "1. userId값은 jwt토큰에서 추출합니다. 아직 구현이 되지 않아 임의의 값(1)으로 처리중이며 userId값은 입력하지 않아도 됩니다.<br>2.헤더에 인증토큰을 보내야 하며 로그인 성공 시 발급됩니다.<br>3.dueDate값은 yyyy-MM-dd-HH형식으로 입력해야 합니다.<br>4. 3. todoId값은 정수값이여야 하며 uri에서 값을 추출합니다. 요청바디에는 해당 값을 보내지 않아도 됩니다.")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "ToDo 수정성공"),
             @ApiResponse(code = 400, message = "잘못된 요청입니다.")})
@@ -83,7 +83,7 @@ public class ToDoController {
     }
 
     @DeleteMapping("/to-dos/{toDoId}")
-    @Operation(summary = "Todo 삭제", description = "1. userId값은 jwt토큰에서 추출합니다. 아직 구현이 되지 않아 임의의 값(4)으로 처리중이며 userId값은 입력하지 않아도 됩니다.<br>2.헤더에 인증토큰을 보내야 하며 로그인 성공 시 발급됩니다.<br>3. todoId값은 정수값이여야 합니다.")
+    @Operation(summary = "Todo 삭제", description = "1. userId값은 jwt토큰에서 추출합니다. 아직 구현이 되지 않아 임의의 값(1)으로 처리중이며 userId값은 입력하지 않아도 됩니다.<br>2.헤더에 인증토큰을 보내야 하며 로그인 성공 시 발급됩니다.<br>3. todoId값은 정수값이여야 합니다.")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "ToDo 삭제성공"),
             @ApiResponse(code = 400, message = "잘못된 요청입니다.")})
